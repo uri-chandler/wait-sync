@@ -13,9 +13,10 @@
 
 var deasync = require('deasync');
 
-module.exports = seconds => {
+module.exports = (seconds=1) => {
+
     if (typeof seconds !== 'number') {
-        return;
+        throw new Error('waitSync :: invalid <seconds> argument' + seconds);
     }
 
     var isDone   = false;

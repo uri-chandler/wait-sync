@@ -24,4 +24,20 @@ describe('wait-sync', () => {
         fakeConsoleLog.join('-').should.equal('1-2-3');
         fakeConsoleLog.join('-').should.not.equal('1-3-2');
     });
+
+    it('throws an error on wrong <seconds> argument', () => {
+        try      { waitSync({})    }
+        catch(e) { should.exist(e) }
+    });
+
+    it('defaults wait-time to 1 seconds', () => {
+        var start = new Date().getTime();
+
+        waitSync();
+
+        var delta = new Date().getTime() - start;
+
+        delta.should.be.above(999);
+        delta.should.be.below(1100);
+    });
 });
