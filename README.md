@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/ujc/wait-sync.svg?branch=master)](https://travis-ci.org/ujc/wait-sync)
 
 # wait-sync
-a simple **non-blocking-yes-synchronous** **`wait(seconds)`** module
+a simple **non-blocking-yet-synchronous** **`wait(seconds)`** module
 
 
 ---
