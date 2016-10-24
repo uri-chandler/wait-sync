@@ -27,9 +27,6 @@
     "mocha": "^3.1.2"
   },
   "dependencies": {
-    "@types/chai": "^3.4.34",
-    "@types/mocha": "^2.2.32",
-    "@types/node": "^6.0.45",
     "deasync": "^0.1.8"
   }
 }
