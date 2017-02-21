@@ -7,7 +7,7 @@ a simple **non-blocking-yet-synchronous** **`wait(seconds)`** module
 ---
 ## Install
 ```
-npm install sync-rest-client
+npm install wait-sync
 ```
 
 
